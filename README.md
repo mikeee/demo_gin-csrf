@@ -1,4 +1,8 @@
-# demo_gin-csrf
+# demo_gin-csrf 
+
+[![Build Status](https://travis-ci.org/mikeee/demo_gin-csrf.svg?branch=master)](https://travis-ci.org/mikeee/demo_gin-csrf)
+[![Maintainability](https://api.codeclimate.com/v1/badges/595a3c21d8e6d64a78b2/maintainability)](https://codeclimate.com/github/mikeee/demo_gin-csrf/maintainability)
+
 
 Quick test of an example for a gin middleware that helps prevent csrf attacks
 
