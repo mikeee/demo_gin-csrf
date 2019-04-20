@@ -1,6 +1,7 @@
 package main
 
 import (
+	"time"
 	"io/ioutil"
 	"net/http/cookiejar"
 	"github.com/stretchr/testify/assert"
@@ -10,6 +11,9 @@ import (
 
 func TestMain(t *testing.T) {
 	go main()
+
+	// Sleep to allow gin time to start
+	time.Sleep(time.Second)
 
 	cookies, _ := cookiejar.New(nil)
 	client := &http.Client{
