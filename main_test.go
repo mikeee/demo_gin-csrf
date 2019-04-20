@@ -19,7 +19,7 @@ func TestMain(t *testing.T) {
 	client := &http.Client{
 		Jar: cookies,
 	}
-	getResp, err := client.Get("http://127.0.0.1:8000/protected")
+	getResp, err := client.Get("http://127.0.0.1:8080/protected")
 
 	if err != nil {
 		t.Fatal("unsuccessful get request to the server")
@@ -38,7 +38,7 @@ func TestMain(t *testing.T) {
 	sessionCookies := getResp.Cookies()
 	
 
-	postReq, _ := http.NewRequest("POST", "http://127.0.0.1:8000/protected", nil)
+	postReq, _ := http.NewRequest("POST", "http://127.0.0.1:8080/protected", nil)
 	cookies.SetCookies(postReq.URL, sessionCookies)
 	postReq.Header.Set("X-CSRF-TOKEN", bodyString)
 
