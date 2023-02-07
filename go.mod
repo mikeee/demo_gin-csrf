@@ -6,7 +6,7 @@ require (
 	github.com/gin-contrib/sessions v0.0.0-20190226023029-1532893d996f
 	github.com/gin-gonic/gin v1.7.0
 	github.com/stretchr/testify v1.4.0
-	github.com/utrack/gin-csrf v0.0.0-20190213160413-1689c46c9740
+	github.com/utrack/gin-csrf v0.0.0-20190424104817-40fb8d2c8fca
 )
 
 require (
